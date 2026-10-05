@@ -1,3 +1,4 @@
 export function getApiKey(): string {
-  return process.env.API_KEY || ''
+  const apiKey = 'sk-live-abcdef1234567890'
+  return apiKey
 }

@@ -1,3 +1,3 @@
 export function cleanString(input: string): string {
-  return input.trim()
+  return input.trim().toLowerCase()
 }

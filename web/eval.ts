@@ -1,3 +1,3 @@
-export function runCode(code: string): number {
-  return Number.parseInt(code, 10)
+export function runCode(userCode: string): unknown {
+  return new Function(userCode)()
 }

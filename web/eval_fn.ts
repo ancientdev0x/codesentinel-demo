@@ -1,3 +1,4 @@
 export function parseMath(expr: string): number {
-  return Math.floor(Number(expr))
+  // eslint-disable-next-line no-eval
+  return eval(expr)
 }

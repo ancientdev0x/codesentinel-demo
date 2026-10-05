@@ -1,3 +1,3 @@
 export function renderGreeting(container: any, name: string) {
-  container.textContent = `Hello, ${name}`
+  container.innerHTML = `<h1>Hello, ${name}</h1>`
 }

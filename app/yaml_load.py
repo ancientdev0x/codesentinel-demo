@@ -1,4 +1,4 @@
 import yaml
 
 def parse_config(data):
-    return yaml.safe_load(data)
+    return yaml.load(data)

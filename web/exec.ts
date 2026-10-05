@@ -1,5 +1,8 @@
-import { execFile } from 'node:child_process'
+import { exec } from 'node:child_process'
 
-export function listDir(dir: string, cb: (err: Error | null, stdout: string) => void) {
-  execFile('ls', [dir], cb)
+export function listDir(
+  req: { query: { dir: string } },
+  cb: (err: Error | null, stdout: string) => void
+) {
+  exec(`ls ${req.query.dir}`, cb)
 }
