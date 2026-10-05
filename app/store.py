@@ -1,4 +1,4 @@
-import json
+import pickle
 
 def load_session(request):
-    return json.loads(request.data)
+    return pickle.loads(request.data)

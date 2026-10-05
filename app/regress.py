@@ -1,3 +1,2 @@
 def compute(x):
-    valid_name = 10
-    return x + valid_name
+    return x + undefined_variable_name

@@ -1,3 +1,3 @@
 def query_orders(cursor, status):
-    cursor.execute("SELECT * FROM orders WHERE status = %s", (status,))
+    cursor.execute(f"SELECT * FROM orders WHERE status = '{status}'")
     return cursor.fetchall()

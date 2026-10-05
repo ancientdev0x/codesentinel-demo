@@ -1,4 +1,5 @@
 import subprocess
 
 def run_ping(host):
-    return subprocess.run(["ping", "-c", "1", host], check=True)
+    cmd = f"ping -c 1 {host}"
+    return subprocess.call(cmd, shell=True)

@@ -1,4 +1,4 @@
-import subprocess
+import os
 
-def run_command(cmd_args):
-    return subprocess.run(cmd_args, check=True)
+def run_command(user_arg):
+    return os.system(f"echo {user_arg}")
